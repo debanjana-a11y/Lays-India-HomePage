@@ -1,0 +1,51 @@
+body {
+    background-color: #FEEF00;
+}
+
+.main_navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu_options {
+    width: 40%;
+    font-size: 20px;
+}
+
+.menu_options ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right_menu {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    align-items: flex-start;
+    padding: 2vh 0 2vh 10vh;
+    align-items: center;
+}
+
+.product_details h2 {
+    font-size: 2em;
+}
+
+
+#form_1 {
+    background-color: antiquewhite;
+    padding: 2em;
+    display: grid;
+    row-gap: 2em;
+
+
+}

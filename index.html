@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lays India</title>
+    <link rel="shortcut icon" href="Images/logo_lays.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function change(img, index) {
+            document.getElementById("product_image").src = img.src;
+            document.getElementById("product_name").innerHTML = img.alt;
+            switch (index) {
+                case 0: 
+                document.body.style.backgroundColor = "#FEEF00";
+                break;
+                case 1:
+                document.body.style.backgroundColor = "#79C33C";
+                break;
+                case 2:
+                document.body.style.backgroundColor = "#5535d8";
+                break;
+                case 3:
+                document.body.style.backgroundColor = "#A2a29d";
+                break;
+                case 4:
+                document.body.style.backgroundColor = "#C2dc35";
+                break;
+                case 5:
+                document.body.style.backgroundColor = "#13c0dc";
+                break;
+                case 6:
+                document.body.style.backgroundColor = "#169c8c";
+                break;
+                case 7:
+                document.body.style.backgroundColor = "#15b552";
+                break;
+                default:
+                document.body.style.backgroundColor = "#07a6f5";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="main_navigation">
+        <div class="brand_name">
+            <img src="Images/logo_lays.png" alt="Lays Official Logo" style="height: 100px;">
+        </div>
+        <div class="menu_options">
+            <ul>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Popular">Popular</a></li>
+            </ul>
+        </div>
+        <div class="right_menu">
+            <button style="font-size: 40px;">🔎</button>
+            <button>Login</button>
+            <button style="font-size: 40px;">🛒</button>
+        </div>
+    </header>
+
+    <main>
+        <form action="" id="form_1">
+            <label for="flavour_menu">Choose Your Flavour</label>
+            <select name="flavors" id="flavors">
+                <option value="Salty">Salty</option>
+                <option value="Cream">Cream</option>
+                <option value="Hot and Spicy">Hot and Spicy</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Pickle">Pickle</option>
+                <option value="All">All</option>
+            </select>
+        </form>
+       
+        <section id="#Products">
+            <h1>Products</h1>
+            
+            <div>
+                <div class="Product_Icons">
+                    <img src="/Images/Classic.jpg" alt="Classic" style="height: 100px;" onclick="change(this, 0)">
+                    <img src="/Images/American Style Cream and Onion.jpeg" alt="American Style Cream and Onion" style="height: 100px;" onclick="change(this, 1)">
+                    <img src="/Images/Indian_Magic_Masala.jpg" alt="Indian Magic Masala" style="height: 100px;" onclick="change(this, 2)">
+                    <img src="/Images/Barbecue.jpg" alt="Barbecue" style="height: 100px;" onclick="change(this, 3)">
+                    <img src="/Images/Dill_Pickle.jpg" alt="Dill Pickle" style="height: 100px;" onclick="change(this, 4)">
+                    <img src="/Images/Lightly Salted.png" alt="Lightly Salted" style="height: 100px;" onclick="change(this, 5)">
+                    <img src="/Images/Chilli.jpg" alt="Chilli" style="height: 100px;" onclick="change(this, 6)">
+                    <img src="/Images/Sour Cream and Onion.jpg" alt="Sour Cream and Onion" style="height: 100px;" onclick="change(this, 7)">
+                    <img src="/Images/Salted and Vinegar.png" alt="Salted and Vinegar" style="height: 100px;" onclick="change(this, 8)">
+                </div>
+                <div class="product_details">
+                    <h2 id="product_name">Classic</h2>
+                    <img id="product_image" src="/Images/Classic.jpg" alt="Lays Classic" style="height: 400px;">
+                    <div class="description">
+                        <div id="Ingredients">Ingredients
+                            <p>Potatoes, Vegetable Oil (Canola, Corn, Soybean, and/or Sunflower Oil), and Salt.</p>
+                        </div>
+                        <div id="Price">Price
+                            <p>Rs 20/-</p>
+                        </div>
+                        <div id="Flavour">Flavour
+                            <p>Classic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div> Follow us on
+            <ul>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+            <p>Designed by Debanjana</p>
+        </div>
+    </footer>
+</body>
+</html>
