@@ -7,11 +7,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: beige;
+    background-color: white;
     box-shadow: 10px 10px 10px black, -10px -10px 10px rgb(230, 224, 224);
 }
 
-header p {
+#message {
+    font-size: 2em;
+    font-style: italic;
+    color: green;
+    font-weight: bold;
+    animation: moving 5s linear infinite;
+}
+
+@keyframes moving {
+    0% {color: orange;}
+    50% {color: green;}
+    100% {color: orange;}
+}
+
+.logo p {
     font-style: italic;
     font-size: larger;
     position: absolute;
@@ -41,30 +55,66 @@ iframe {
     font-size: 40px;
     border-radius: 50%;
     border: none;
+    display: none;  /* Add feature later */
 }
 
 #Products {
     text-align: center;
 }
 
+#Products h1 {
+    font-style: italic;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.Product_Icons img {
+    cursor: pointer;
+}
+
 .product_details {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 2vw;
-    align-items: flex-start;
-    padding: 2vh 0 2vh 10vh;
+    flex-direction:column;
     align-items: center;
+}
+
+.product_details img {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    33% {transform: rotate(5deg);}
+    66% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 .product_details h2 {
     font-size: 2em;
+    font-style: italic;
 }
 
+.product_details h3 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.description > p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#price {
+    margin: 0;
+    font-size: 3em;
+}
 
 #form_1 {
     padding: 2em;
     text-align: center;
+    display: none;  /* Add feature later */
 }
 
 #form_1 label {
@@ -89,6 +139,7 @@ select, option {
 
 #Social_Media h2 {
     text-align: center;
+    font-size: 2em;
 }
 
 
@@ -103,7 +154,7 @@ select, option {
     padding-top: 5em;
 }
 
-#Social_Media div ul li:hover {
+.Product_Icons img:hover, #Social_Media div ul li:hover {
     transform: scale(1.2);
 }
 

@@ -11,33 +11,53 @@
         function change(img, index) {
             document.getElementById("product_image").src = img.src;
             document.getElementById("product_name").innerHTML = img.alt;
+            let Ingredients = document.getElementById("ingredients");
+            let Flavor = document.getElementById("flavour");
             switch (index) {
                 case 0: 
                 document.body.style.backgroundColor = "#FEEF00";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Canola, Corn, Soybean, and/or Sunflower Oil), and Salt.";
+                Flavor.innerText = "Salty";
                 break;
                 case 1:
                 document.body.style.backgroundColor = "#79C33C";
+                Ingredients.innerText = "Potato, Edible Vegetable Oil (Palmolein Oil, Rice Bran Oil), Sugar, Iodised Salt, Milk Products (Milk Solids, Cheese Powder) (1.4%), ~ Spices & Condiments (Onion Powder, Parsley Powder, Pepper Powder).";
+                Flavor.innerText = "Cream";
                 break;
                 case 2:
                 document.body.style.backgroundColor = "#5535d8";
+                Ingredients.innerText = "Potato, Edible Vegetable Oil, Spices and (Onion Powder, Chilli Powder, Dry Mango Powder, Coriander Ginger Powder, Garlic Powder, Black Pepper Powder, Turmeric Powder, Cumin), Salt, Black Salt, Sugar, Tomato Powder, Citric Acid, Tartaric Acid.";
+                Flavor.innerText = "Hot and Spicy";
                 break;
                 case 3:
                 document.body.style.backgroundColor = "#A2a29d";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Canola, Corn, Soybean, and/or Sunflower Oil), and Salt, Barbecue Seasoning (Sugar, Dextrose, Salt, Maltodextrin [Made From Corn], Molasses, Torula Yeast, Onion Powder, Spices, Tomato Powder, Paprika, Natural Flavors, Corn Starch, Caramel Color, Yeast Extract, Paprika Extract, Garlic Powder, and Mustard Seed Oil).";
+                Flavor.innerText = "Hot and Spicy";
                 break;
                 case 4:
                 document.body.style.backgroundColor = "#C2dc35";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Sunflower, Corn, and/or Canola Oil), Dill Pickle Seasoning (Maltodextrin [Made From Corn], Natural Flavors, Salt, Vinegar, Garlic Powder, Yeast Extract, and Spice Extracts [Including Dill]).";
+                Flavor.innerText = "Pickle";
                 break;
                 case 5:
                 document.body.style.backgroundColor = "#13c0dc";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Sunflower, Corn, and/or Canola Oil), and Salt.";
+                Flavor.innerText = "Salty";
                 break;
                 case 6:
                 document.body.style.backgroundColor = "#169c8c";
+                Ingredients.innerText = "Potato, Edible Vegetable Oil, Sugar, Salt, **Spices & Condiments (Red Chilli Powder, Garlic Powder, Onion powder), Lime Juice Powder (0.1%)";
+                Flavor.innerText = "Lemon";
                 break;
                 case 7:
                 document.body.style.backgroundColor = "#15b552";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Sunflower, Corn and/or Canola Oil), Sour Cream & Onion Seasoning (Skim Milk, Salt, Maltodextrin[Made from Corn], Onion Powder, Whey, Sour Cream[Cultured Cream, Skim Milk], Canola Oil, Parsley, Natural Flavor, Lactose, Sunflower Oil, Citric Acid, Whey Protein Concentrate and Buttermilk). Contains Milk Ingredients.";
+                Flavor.innerText = "Cream";
                 break;
                 default:
                 document.body.style.backgroundColor = "#07a6f5";
+                Ingredients.innerText = "Potatoes, Vegetable Oil (Sunflower, Corn and/or Canola Oil), Salt & Vinegar Seasoning (Maltodextrin [Made From Corn], Natural Flavors, Salt, Malic Acid, and Vinegar).";
+                Flavor.innerText = "Salty";
             }
         }
     </script>
@@ -48,6 +68,7 @@
             <img src="Images/logo_lays.png" alt="Lays Official Logo">
             <p>IN</p>
         </div>
+        <p id="message">Namaste, Welcome to Lay's India</p>
         <div class="search">
             <button>🔎</button>
         </div>
@@ -55,7 +76,7 @@
 
     <main>
         <div class="promo_vid">
-            <iframe src="https://www.youtube.com/embed/JGnhYzaL7As?autoplay=1&mute=1&loop=1"></iframe>
+            <iframe src="https://www.youtube.com/embed/JGnhYzaL7As?autoplay=1&mute=1&loop=1&playlist=JGnhYzaL7As"></iframe>
             </iframe>
         </div>
         
@@ -71,6 +92,8 @@
             </select>
         </form>
        
+        <hr>
+        
         <section id="Products">
             <h1>Products</h1>
             
@@ -90,19 +113,18 @@
                     <h2 id="product_name">Classic</h2>
                     <img id="product_image" src="/Images/Classic.jpg" alt="Lays Classic" style="height: 400px;">
                     <div class="description">
-                        <div id="Ingredients">Ingredients
-                            <p>Potatoes, Vegetable Oil (Canola, Corn, Soybean, and/or Sunflower Oil), and Salt.</p>
-                        </div>
-                        <div id="Price">Price
-                            <p>Rs 20/-</p>
-                        </div>
-                        <div id="Flavour">Flavour
-                            <p>Classic</p>
-                        </div>
+                        <h3><strong>Flavour</strong></h3>
+                        <p id="flavour">Salty</p>
+                        <h3><strong>Ingredients</strong></h3>
+                        <p id="ingredients">Potatoes, Vegetable Oil (Canola, Corn, Soybean, and/or Sunflower Oil), and Salt.</p>
+                        <h3><strong>Price</strong></h3>
+                        <p id="price">Rs 20/-</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <hr>
 
         <section id="Social_Media">
             <h2>Follow us for more</h2>
