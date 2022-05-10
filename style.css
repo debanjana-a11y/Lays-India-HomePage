@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #FEEF00;
     
@@ -41,9 +44,7 @@ header {
 }
 
 .promo_vid {
-    padding: 10vmin;
-    justify-content: center;
-    height: 50vh;
+    height: 30rem;
 }
 
 iframe {
@@ -148,10 +149,10 @@ select, option {
     list-style: none;
     height: 20vh;
     display: flex;
-    padding-left: 0;
+    /* padding-left: 0; */
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .Product_Icons img:hover, #Social_Media div ul li:hover {
